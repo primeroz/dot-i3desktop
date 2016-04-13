@@ -7,11 +7,11 @@
 # @license MIT
 ##############################################################################
 
-pkg.link() {
-    # Link package into ~/.i3
-    fs.link_file "$PKG_PATH" "$ELLIPSIS_HOME/.config/i3status"
-    $PKG_PATH/compile.sh
-}
+#pkg.link() {
+#    # Link package into ~/.i3
+#    #fs.link_file "$PKG_PATH" "$ELLIPSIS_HOME/.config/i3status"
+#    #$PKG_PATH/compile.sh
+#}
 
 ##############################################################################
 
@@ -23,7 +23,7 @@ pkg.pull(){
     git.pull
 
     # Update the config file
-    $PKG_PATH/compile.sh
+    #$PKG_PATH/compile.sh
 }
 
 ##############################################################################
